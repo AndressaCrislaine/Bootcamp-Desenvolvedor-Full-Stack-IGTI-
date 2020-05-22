@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Montador de cor</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h2>Montador de cor (RGB)</h2>
+    <form>
+      <div id="descricao">
+        <label id="vermelho" class="input-label">
+          (R) Vermelho:
+          <input
+            type="range"
+            min="0"
+            max="255"
+            name="red"
+            id="red"
+            value="0"
+          /><input type="text" id="inputRed" value="0" disabled />
+        </label>
+        <label id="verde">
+          (G) Verde:
+          <input
+            type="range"
+            min="0"
+            max="255"
+            name="green"
+            id="green"
+            value="0"
+          /><input type="text" id="inputGreen" value="0" disabled />
+        </label>
+        <label id="azul">
+          (B) Azul:
+          <input
+            type="range"
+            min="0"
+            max="255"
+            name="blue"
+            id="blue"
+            value="0"
+          /><input type="text" id="inputBlue" value="0" disabled />
+        </label>
+
+        <div class="container">
+          <div id="boxcolor"></div>
+        </div>
+      </div>
+    </form>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
